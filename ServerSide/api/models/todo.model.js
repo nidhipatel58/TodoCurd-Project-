@@ -13,6 +13,7 @@ const Todo = sequelize.define(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true, 
     },
     description: {
       type: DataTypes.TEXT,
