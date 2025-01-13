@@ -36,7 +36,7 @@ sequelize
 app.use("/api", routes);
 
 // Server Setup
-const PORT = process.env.PORT_SERVER || 4001;
+const PORT = process.env.PORT_SERVER || 5001;
 http.createServer(app).listen(PORT, () => {
   console.log(`Server Running on port ${PORT}`);
 });

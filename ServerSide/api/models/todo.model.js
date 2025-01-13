@@ -13,7 +13,10 @@ const Todo = sequelize.define(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true, 
+      unique: {
+        args: true,
+        msg: "Title must be unique!",
+      },
     },
     description: {
       type: DataTypes.TEXT,
